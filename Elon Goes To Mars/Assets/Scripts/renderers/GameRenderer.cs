@@ -3,10 +3,12 @@ using UnityEngine;
 /**
   Renders everything on a Game scene.
 **/
-public class GameRenderer {
+public class GameRenderer : MonoBehaviour {
+  private ElonRenderer elonRenderer;
+
   public void RenderInitialState ()
   {
-    BackgroundRenderer backgroundRenderer = new BackgroundRenderer();
-    backgroundRenderer.render();
+    elonRenderer = GetComponent<ElonRenderer>();
+    elonRenderer.render();
   }
 }
