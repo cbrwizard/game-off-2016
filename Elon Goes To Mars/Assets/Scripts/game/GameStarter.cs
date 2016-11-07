@@ -5,6 +5,7 @@
 **/
 public class GameStarter : MonoBehaviour {
   private GameRenderer gameRenderer;
+
   void Start () {
     gameRenderer = GetComponent<GameRenderer>();
     gameRenderer.RenderInitialState();
