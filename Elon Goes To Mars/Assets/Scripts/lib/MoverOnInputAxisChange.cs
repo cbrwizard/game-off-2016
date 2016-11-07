@@ -6,6 +6,7 @@ using System.Collections.Generic;
 **/
 public class MoverOnInputAxisChange : MonoBehaviour {
   public float speed;
+  private Rigidbody2D rb;
 
   public void HandleInputAxisChange(Dictionary<string, float> axis)
   {
@@ -14,7 +15,8 @@ public class MoverOnInputAxisChange : MonoBehaviour {
 
   public void Move(Dictionary<string, float> axis)
   {
-    Vector3 movement = new Vector3 (axis["Horizontal"], axis["Vertical"], 0);
-    transform.position += movement * speed * Time.deltaTime;
+    rb = GetComponent<Rigidbody2D>();
+    rb.AddForce(transform.up * axis["Vertical"] * speed * Time.deltaTime);
+    rb.AddForce(transform.right * axis["Horizontal"] * speed * Time.deltaTime);
   }
 }
