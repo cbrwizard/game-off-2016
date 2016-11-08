@@ -119,6 +119,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 973012166}
   mainScoreScript: {fileID: 30456442}
+--- !u!114 &30456444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 30456437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dff7484412ab54b41ba8f47824d3c38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionPrefab: {fileID: 1000011946769868, guid: 0dca4c06eb6c84122880da3777f96a8f,
+    type: 2}
+  firstSpawn: 2
+  spawnFrequency: 1.5
+  destroyTime: 10
 --- !u!1001 &107432712
 Prefab:
   m_ObjectHideFlags: 0
