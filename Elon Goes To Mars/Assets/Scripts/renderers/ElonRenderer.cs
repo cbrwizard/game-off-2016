@@ -13,7 +13,6 @@ public class ElonRenderer : MonoBehaviour {
 
   public void render()
   {
-    Debug.Log("Rendering Elon");
     Instantiate(elonPrefab);
   }
 }

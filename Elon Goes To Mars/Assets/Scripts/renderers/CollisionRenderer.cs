@@ -21,8 +21,6 @@ public class CollisionRenderer : MonoBehaviour {
 
   public void render()
   {
-    Debug.Log("Rendering collision");
-
     Object collision = Instantiate(
       collisionPrefab,
       new Vector3(9.0f, Random.Range (-4.0f, 4.0f), 0),

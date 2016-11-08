@@ -30,7 +30,6 @@ public class InputAxisListener : MonoBehaviour {
 
   private void DispatchInputAxisChange(Dictionary<string, float> axis)
   {
-    Debug.Log("has movement");
     SendMessage("HandleInputAxisChange", axis);
   }
 }
