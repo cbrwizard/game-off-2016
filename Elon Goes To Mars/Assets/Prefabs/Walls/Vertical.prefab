@@ -23,7 +23,7 @@ GameObject:
   - 50: {fileID: 50000013943378314}
   m_Layer: 0
   m_Name: Vertical
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49,7 +49,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010538729262}
   m_UseAutoMass: 0
-  m_Mass: 250000
+  m_Mass: 25000
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0

@@ -695,16 +695,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 50000011345703258, guid: 1c90ed20ed4524469bee6831c4d77d1f,
-        type: 2}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50000011345703258, guid: 1c90ed20ed4524469bee6831c4d77d1f,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1000000
-      objectReference: {fileID: 0}
     - target: {fileID: 61000014050839180, guid: 1c90ed20ed4524469bee6831c4d77d1f,
         type: 2}
       propertyPath: m_Density
@@ -713,6 +703,11 @@ Prefab:
     - target: {fileID: 1000010033847156, guid: 1c90ed20ed4524469bee6831c4d77d1f, type: 2}
       propertyPath: m_Name
       value: Horizontal lower
+      objectReference: {fileID: 0}
+    - target: {fileID: 50000011345703258, guid: 1c90ed20ed4524469bee6831c4d77d1f,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1c90ed20ed4524469bee6831c4d77d1f, type: 2}
@@ -895,7 +890,7 @@ Prefab:
     - target: {fileID: 224000012700813506, guid: 363fd0e72989f4fa081d18b16f1cfe5d,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 224000012700813506, guid: 363fd0e72989f4fa081d18b16f1cfe5d,
         type: 2}

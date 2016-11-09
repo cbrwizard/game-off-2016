@@ -2,39 +2,68 @@ using UnityEngine;
 
 /**
   Moves an object on arrow keys press.
+  An object must have a Rigidbody 2D.
   TODO: somehow separate into 2 class:
-  1. ArrowKeysListener which detects a move and dispatches a direction change.
-  2. MoverOnDirectionChange which moves on a direction change.
+  1. ArrowKeysListener which detects a move and dispatches a isMovingHorizontally change.
+  2. MoverOnDirectionChange which moves on a isMovingHorizontally change.
 **/
 public class MoverOnArrowKeysPress : MonoBehaviour {
   public float speed;
+  public Rigidbody2D rb2D;
 
-   void Update()
+  void Start()
+  {
+    rb2D = GetComponent<Rigidbody2D>();
+  }
+
+   void FixedUpdate()
   {
     Move();
   }
 
   private void Move()
   {
-    Vector3 horizontalVector = new Vector3(speed * Time.deltaTime,0,0);
-    Vector3 vericalVector = new Vector3(0,speed * Time.deltaTime,0);
+    float newX = 0;
+    float newY = 0;
+    bool isMovingHorizontally = false;
 
     if(Input.GetKey(KeyCode.RightArrow))
     {
-      transform.position += horizontalVector;
+      isMovingHorizontally = true;
+      newX += HorizontalPosition();
     }
+
     if(Input.GetKey(KeyCode.LeftArrow))
     {
-      transform.position -= horizontalVector;
+      isMovingHorizontally = true;
+      newX -= HorizontalPosition();
     }
 
     if(Input.GetKey(KeyCode.UpArrow))
     {
-      transform.position += vericalVector;
+      newY += VerticalPosition(isMovingHorizontally);
     }
+
     if(Input.GetKey(KeyCode.DownArrow))
     {
-      transform.position -= vericalVector;
+      newY -= VerticalPosition(isMovingHorizontally);
     }
+
+    rb2D.MovePosition(rb2D.position + new Vector2(newX, newY));
+  }
+
+  private float HorizontalPosition()
+  {
+    return speed * Time.deltaTime;
+  }
+
+  private float VerticalPosition(bool isMovingHorizontally)
+  {
+      float appliedSpeed = speed;
+      if (isMovingHorizontally)
+      {
+        appliedSpeed /= 2;
+      }
+      return appliedSpeed * Time.deltaTime;
   }
 }
