@@ -22,8 +22,9 @@ GameObject:
   - 212: {fileID: 212000013865033180}
   - 61: {fileID: 61000014201545312}
   - 114: {fileID: 114000014038978454}
-  - 114: {fileID: 114000010941621446}
   - 50: {fileID: 50000010390426494}
+  - 114: {fileID: 114000011834911042}
+  - 114: {fileID: 114000014290898292}
   m_Layer: 0
   m_Name: Elon
   m_TagString: Player
@@ -56,11 +57,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61000014201545312
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -69,13 +70,13 @@ BoxCollider2D:
   m_GameObject: {fileID: 1000010078909382}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e10c3be0ad2104239b6c2cecadf65a8d, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 5.9999995, y: 2}
---- !u!114 &114000010941621446
+--- !u!114 &114000011834911042
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,10 +84,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010078909382}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51e0c447ce6e442c7beeb98c9f8c6b95, type: 3}
+  m_Script: {fileID: 11500000, guid: 647a210b353df419baa78b70d8c875ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wallTag: Wall
+  collisionTag: Collision
+  messageName: HandleCollisionHit
 --- !u!114 &114000014038978454
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -99,7 +101,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  rb2D: {fileID: 0}
+--- !u!114 &114000014290898292
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010078909382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9dfd38da498dd47c3b98b66b52f5325a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212000013865033180
 SpriteRenderer:
   m_ObjectHideFlags: 1

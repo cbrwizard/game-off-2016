@@ -6,10 +6,12 @@ using UnityEngine;
   TODO: somehow separate into 2 class:
   1. ArrowKeysListener which detects a move and dispatches a isMovingHorizontally change.
   2. MoverOnDirectionChange which moves on a isMovingHorizontally change.
+  FIXME:
+    1. Change logic so that speed is /2 for x too when it should go diagonally.
 **/
 public class MoverOnArrowKeysPress : MonoBehaviour {
   public float speed;
-  public Rigidbody2D rb2D;
+  private Rigidbody2D rb2D;
 
   void Start()
   {
