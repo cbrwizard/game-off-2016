@@ -16,6 +16,7 @@ public class MoverOnInputAxisChange : MonoBehaviour {
   public void Move(Dictionary<string, float> axis)
   {
     rb = GetComponent<Rigidbody2D>();
+
     rb.AddForce(transform.up * axis["Vertical"] * speed * Time.deltaTime);
     rb.AddForce(transform.right * axis["Horizontal"] * speed * Time.deltaTime);
   }
