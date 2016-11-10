@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9de2a3da8ef434a03874be6b67f7abf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debounceTime: 2
   collisionTag: Enemy
 --- !u!114 &114000013441828524
 MonoBehaviour:

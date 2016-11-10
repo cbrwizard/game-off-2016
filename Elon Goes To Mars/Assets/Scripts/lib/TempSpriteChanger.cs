@@ -2,6 +2,9 @@ using UnityEngine;
 
 /**
   Changes a sprite temporarily on an event.
+  TODO: change to a proper state instead.
+  FIXME: sometimes it's out of sync with the debounce time of
+  OnTriggerCollisionMessageSender. It should be changed together.
 **/
 public class TempSpriteChanger : MonoBehaviour {
   public float changeTime;
