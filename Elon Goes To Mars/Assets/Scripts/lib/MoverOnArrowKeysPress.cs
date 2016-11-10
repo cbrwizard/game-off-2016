@@ -7,7 +7,8 @@ using UnityEngine;
   1. ArrowKeysListener which detects a move and dispatches a isMovingHorizontally change.
   2. MoverOnDirectionChange which moves on a isMovingHorizontally change.
   FIXME:
-    1. Change logic so that speed is /2 for x too when it should go diagonally.
+    1. Change logic so that speed is /2 for x too when it should go diagonally
+    as currently the speed is decreased only for vertical movement.
 **/
 public class MoverOnArrowKeysPress : MonoBehaviour {
   public float speed;

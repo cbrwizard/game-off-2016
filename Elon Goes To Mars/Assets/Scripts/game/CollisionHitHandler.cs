@@ -6,6 +6,7 @@ using UnityEngine;
 public class CollisionHitHandler : MonoBehaviour {
   void HandleCollisionHit()
   {
+    SendMessage("HandleTempSpriteChange");
     Debug.Log("received!");
   }
 }
