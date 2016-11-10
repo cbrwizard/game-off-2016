@@ -11,4 +11,9 @@ public class ConstantMover : MonoBehaviour {
   {
     transform.Translate(Vector3.left * speed * Time.deltaTime);
   }
+
+  void HandleConstantMoverSpeedChange(float newSpeed)
+  {
+    speed = newSpeed;
+  }
 }

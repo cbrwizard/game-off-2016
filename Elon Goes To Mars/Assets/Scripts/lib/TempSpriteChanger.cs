@@ -23,13 +23,21 @@ public class TempSpriteChanger : MonoBehaviour {
 
   private void TempChangeSprite()
   {
-    spriteRenderer.sprite = tempSprite;
+    if (!AlreadyChanged())
+    {
+      spriteRenderer.sprite = tempSprite;
 
-    Invoke("RestoreSprite", changeTime);
+      Invoke("RestoreSprite", changeTime);
+    }
   }
 
   private void RestoreSprite()
   {
     spriteRenderer.sprite = previousSprite;
+  }
+
+  private bool AlreadyChanged()
+  {
+    return spriteRenderer.sprite == tempSprite;
   }
 }
