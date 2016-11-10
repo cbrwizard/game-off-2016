@@ -7,10 +7,21 @@ using UnityEngine;
   TODO: refactor it into a proper state.
 **/
 public class ElonCollisionHitHandler : MonoBehaviour {
+  public int decreaseScoreOnHit;
+
+  private GameObject mainController;
+  private MainScore mainScore;
 
   void HandleCollisionHit()
   {
     SendMessage("HandleTempSpriteChange");
-    Debug.Log("received!");
+    DecreaseScore();
+  }
+
+  private void DecreaseScore()
+  {
+    mainController = GameObject.FindWithTag("MainController");
+    mainScore = mainController.GetComponent<MainScore>();
+    mainScore.score -= decreaseScoreOnHit;
   }
 }
