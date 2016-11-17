@@ -2,6 +2,8 @@ using UnityEngine;
 
 /**
   Renders an Enemy every certain period of time.
+  TODO: create a smart algorithm for coordinates so that
+  they're selected more scatteredly.
 **/
 public class EnemyRenderer : MonoBehaviour {
   public GameObject enemyPrefab;

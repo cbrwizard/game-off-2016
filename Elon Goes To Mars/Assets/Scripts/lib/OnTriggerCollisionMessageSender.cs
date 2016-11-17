@@ -1,46 +1,33 @@
 using UnityEngine;
-using System;
 
 /**
   On trigger collision stay sends a message to both objects.
-  TODO now: make time param optional
-  The problem with this is that without a time param option
-  this will trigger all the time because of OnTriggerStay2D
-  being used instead of OnTriggerEnter2D. It's used because
-  an object can be inside the other object when the timer is
-  off.
+  TODO: make state param optional
 **/
 public class OnTriggerCollisionMessageSender: MonoBehaviour {
-  // Should be the same as tmp sprite change time.
-  public int debounceTime;
   public string collisionTag;
-  private DateTime lastCollision;
-  TimeSpan invincibleDuration;
+  public string ignoreStateName;
+  private int ignoreState;
+  private Animator animator;
 
   void Start()
   {
-    debounceTime = 1;
-    invincibleDuration = TimeSpan.FromSeconds(debounceTime);
-    resetLastCollision();
+    ignoreState = Animator.StringToHash(ignoreStateName);
+    animator = GetComponent<Animator>();
   }
 
   void OnTriggerStay2D(Collider2D other)
   {
-    if (timePassed() && other.CompareTag(collisionTag))
+    if (isCurrentStateIgnored() && other.CompareTag(collisionTag))
     {
-      resetLastCollision();
       SendMessage("HandleCollisionHit");
+
       other.gameObject.SendMessage("HandleCollisionHit", null, SendMessageOptions.DontRequireReceiver);
     }
   }
 
-  private bool timePassed()
+  private bool isCurrentStateIgnored()
   {
-    return DateTime.UtcNow - lastCollision > invincibleDuration;
-  }
-
-  private void resetLastCollision()
-  {
-    lastCollision = DateTime.UtcNow;
+    return animator.GetCurrentAnimatorStateInfo(0).shortNameHash != ignoreState;
   }
 }

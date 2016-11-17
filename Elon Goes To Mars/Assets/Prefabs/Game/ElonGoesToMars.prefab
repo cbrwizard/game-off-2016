@@ -69,7 +69,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1000011946769868, guid: 0dca4c06eb6c84122880da3777f96a8f,
     type: 2}
   firstSpawn: 2
-  spawnFrequency: 1
+  spawnFrequency: 0.75
 --- !u!114 &114000014130974714
 MonoBehaviour:
   m_ObjectHideFlags: 1
