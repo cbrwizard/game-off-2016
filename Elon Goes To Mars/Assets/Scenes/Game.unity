@@ -252,6 +252,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013597022034, guid: 552e534783264489cac8698a27248332, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.435551
@@ -289,6 +294,51 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 973012166}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 256378282}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleScoreChange
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014130974714, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: scoreChangeEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 552e534783264489cac8698a27248332, type: 2}
   m_IsPrefabParent: 0
@@ -297,6 +347,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4000013818129456, guid: c461d629a249748cfb9e2b35639d822e,
     type: 2}
   m_PrefabInternal: {fileID: 1781254525}
+--- !u!114 &256378282 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012566676524, guid: 552e534783264489cac8698a27248332,
+    type: 2}
+  m_PrefabInternal: {fileID: 226697672}
+  m_Script: {fileID: 11500000, guid: fa8957166ee044e978c1601aed1c9f46, type: 3}
 --- !u!4 &265377561 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012013455804, guid: 1c90ed20ed4524469bee6831c4d77d1f,
@@ -617,6 +673,11 @@ Prefab:
     - target: {fileID: 4000011910663350, guid: a7b82100205934567953f3b3e5533c15, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000014038978454, guid: a7b82100205934567953f3b3e5533c15,
+        type: 2}
+      propertyPath: speed
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a7b82100205934567953f3b3e5533c15, type: 2}

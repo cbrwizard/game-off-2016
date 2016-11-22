@@ -4,6 +4,8 @@ using UnityEngine;
   Renders an Enemy every certain period of time.
   TODO: create a smart algorithm for coordinates so that
   they're selected more scatteredly.
+  TODO: create a smart algorithm so that the enemies cannot be spawned
+  too close to each other.
 **/
 public class EnemyRenderer : MonoBehaviour {
   public GameObject enemyPrefab;
