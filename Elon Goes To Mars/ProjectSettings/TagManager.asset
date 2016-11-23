@@ -7,6 +7,7 @@ TagManager:
   - Wall
   - Enemy
   - MainController
+  - Movable
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Collisions
   - 
   - 
   - 
@@ -41,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Collisions
+    uniqueID: 3949941149
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

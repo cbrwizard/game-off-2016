@@ -8,7 +8,6 @@ public class ScoreChangeEvent : UnityEvent<int> {}
   Stores the Score value and dispatches an event on it's change.
 **/
 public class MainScore : MonoBehaviour {
-  private int _score = 1000;
   public ScoreChangeEvent scoreChangeEvent;
 
   public int score
@@ -27,6 +26,8 @@ public class MainScore : MonoBehaviour {
       scoreChangeEvent.Invoke(_score);
     }
   }
+
+  private int _score = 1000;
 
   void Start()
   {
