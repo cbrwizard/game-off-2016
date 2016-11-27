@@ -11,6 +11,10 @@ public class EnemyRenderer : MonoBehaviour {
   public GameObject enemyPrefab;
   public float firstSpawn = 2.0f;
   public float spawnFrequency = 1.5f;
+  public float startingX;
+  public float startingYFrom;
+  public float startingYTo;
+  public int destroyAfterSeconds;
 
   public EnemyRenderer(GameObject passedEnemyPrefab)
   {
@@ -26,10 +30,10 @@ public class EnemyRenderer : MonoBehaviour {
   {
     GameObject enemy = (GameObject)Instantiate(
       enemyPrefab,
-      new Vector3(9.0f, Random.Range (-4.0f, 4.0f), 0),
+      new Vector3(startingX, Random.Range (startingYFrom, startingYTo), 0),
       Quaternion.identity
     );
 
-    enemy.SendMessage("HandleDestroyOnDelayStart", 5);
+    enemy.SendMessage("HandleDestroyOnDelayStart", destroyAfterSeconds);
   }
 }
