@@ -22,10 +22,11 @@ GameObject:
   - 114: {fileID: 114000014130974714}
   - 114: {fileID: 114000012566676524}
   - 114: {fileID: 114000013966909098}
-  - 114: {fileID: 114000010590859320}
   - 114: {fileID: 114000013822054310}
   - 114: {fileID: 114000010522571906}
-  - 114: {fileID: 114000013192575364}
+  - 114: {fileID: 114000012415235836}
+  - 114: {fileID: 114000011884125136}
+  - 114: {fileID: 114000011493311154}
   m_Layer: 0
   m_Name: ElonGoesToMars
   m_TagString: MainController
@@ -57,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed35020712326486da3ca6d948ec6399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114000010590859320
+--- !u!114 &114000011493311154
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -65,7 +66,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000011388734326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91839b707ef6e469d953befb99071897, type: 3}
+  m_Script: {fileID: 11500000, guid: 11027312c85d04f5b94927059e5a7514, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasGroup: {fileID: 0}
+  delayTime: 2
+--- !u!114 &114000011884125136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c3e43082e22a43f197246a7a4e844f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graphicsParent: {fileID: 0}
+  speed: 1
+--- !u!114 &114000012415235836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ab2f9f804ac4ee396036900c9fe54e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114000012566676524
@@ -81,19 +108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   mainScoreScript: {fileID: 114000014130974714}
---- !u!114 &114000013192575364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011388734326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d56d3a3e5d4184592a052952b2f8b11d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graphicToFade: {fileID: 0}
-  speed: 1.25
 --- !u!114 &114000013822054310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -141,17 +155,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114000010590859320}
-        m_MethodName: HandleDeath
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
@@ -163,7 +166,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 114000013192575364}
+      - m_Target: {fileID: 114000011884125136}
+        m_MethodName: Run
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114000011493311154}
         m_MethodName: Run
         m_Mode: 1
         m_Arguments:
@@ -175,6 +189,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: DeathEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  deathScore: 900
 --- !u!114 &114000013966909098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -189,11 +204,11 @@ MonoBehaviour:
   enemyPrefab: {fileID: 1000011946769868, guid: 0dca4c06eb6c84122880da3777f96a8f,
     type: 2}
   firstSpawn: 2
-  spawnFrequency: 1
-  startingX: 45
-  startingYFrom: -21
-  startingYTo: 21
-  destroyAfterSeconds: 10
+  spawnFrequency: 1.5
+  startingX: 132
+  startingYFrom: -60
+  startingYTo: 60
+  destroyAfterSeconds: 12
 --- !u!114 &114000014130974714
 MonoBehaviour:
   m_ObjectHideFlags: 1

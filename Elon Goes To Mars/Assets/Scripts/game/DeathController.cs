@@ -11,7 +11,7 @@ public class DeathEvent : UnityEvent {}
 public class DeathController: MonoBehaviour {
   public DeathEvent deathEvent;
 
-  private int deathScore = 800;
+  public int deathScore;
 
   void Start()
   {
