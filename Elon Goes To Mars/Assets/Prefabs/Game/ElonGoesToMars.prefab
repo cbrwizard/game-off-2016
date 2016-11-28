@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
-  delayTime: 2
+  delayTime: 1
 --- !u!114 &114000011884125136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,8 +82,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c3e43082e22a43f197246a7a4e844f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphicsParent: {fileID: 0}
-  speed: 1
+  graphicsParent: {fileID: 1000011206205712, guid: 6d5286b68922e45fd94436871c3eb647,
+    type: 2}
+  speed: 0.5
 --- !u!114 &114000012415235836
 MonoBehaviour:
   m_ObjectHideFlags: 1
