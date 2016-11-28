@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 /**
   Is responsible for fading in all graphics of an object.
@@ -9,12 +10,17 @@ using UnityEngine.UI;
 public class FadeInGraphicsInObject : MonoBehaviour {
   public GameObject graphicsParent;
   public float speed;
-
+  public float delayTime;
 
   public void Run()
   {
+    StartCoroutine(FadeIn());
+  }
+
+  IEnumerator FadeIn() {
+    yield return new WaitForSecondsRealtime(delayTime);
     foreach (Graphic graphic in graphicsParent.GetComponentsInChildren<Graphic>())
-  {
+    {
       graphic.CrossFadeAlpha(250, speed, true);
     }
   }

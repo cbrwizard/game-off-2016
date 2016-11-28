@@ -17,7 +17,7 @@ public class FadeInCanvasGroup : MonoBehaviour {
     yield return new WaitForSecondsRealtime(delayTime);
     while (canvasGroup.alpha < 1.0f)
     {
-      canvasGroup.alpha += 0.05f;
+      canvasGroup.alpha += 0.02f;
       yield return new WaitForSecondsRealtime(0.001f);
     }
   }

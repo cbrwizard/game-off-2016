@@ -6,7 +6,7 @@ using UnityEngine;
 public class TimeManipulator : MonoBehaviour {
   public void SlowDownAlmostCompletely()
   {
-    Time.timeScale = 0.05f;
+    Time.timeScale = 0.1f;
     UpdateFixedDeltaTime();
   }
 
