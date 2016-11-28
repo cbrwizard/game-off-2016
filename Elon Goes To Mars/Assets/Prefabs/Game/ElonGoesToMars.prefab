@@ -27,6 +27,8 @@ GameObject:
   - 114: {fileID: 114000012415235836}
   - 114: {fileID: 114000011884125136}
   - 114: {fileID: 114000011493311154}
+  - 114: {fileID: 114000011032820868}
+  - 114: {fileID: 114000013417379864}
   m_Layer: 0
   m_Name: ElonGoesToMars
   m_TagString: MainController
@@ -58,6 +60,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed35020712326486da3ca6d948ec6399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000011032820868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 112799e5025c5461aa295a192c3c2fb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceChangeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114000013417379864}
+        m_MethodName: HandleDistanceChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: DistanceChangeEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114000011493311154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,8 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c3e43082e22a43f197246a7a4e844f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graphicsParent: {fileID: 1000011206205712, guid: 6d5286b68922e45fd94436871c3eb647,
-    type: 2}
+  graphicsParent: {fileID: 0}
   speed: 1.5
   delayTime: 1
 --- !u!114 &114000012415235836
@@ -110,6 +138,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   mainScoreScript: {fileID: 114000014130974714}
+--- !u!114 &114000013417379864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb6051b7f029417a9cfb40b642f63d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceText: {fileID: 0}
+  distanceScript: {fileID: 114000011032820868}
 --- !u!114 &114000013822054310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,8 +165,7 @@ MonoBehaviour:
   deathEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 61000014201545312, guid: a7b82100205934567953f3b3e5533c15,
-          type: 2}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -147,8 +187,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114000014038978454, guid: a7b82100205934567953f3b3e5533c15,
-          type: 2}
+      - m_Target: {fileID: 0}
         m_MethodName: set_enabled
         m_Mode: 6
         m_Arguments:
@@ -182,7 +221,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: DeathEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  deathScore: 900
+  deathScore: 500
 --- !u!114 &114000013966909098
 MonoBehaviour:
   m_ObjectHideFlags: 1

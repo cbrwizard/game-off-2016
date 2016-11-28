@@ -145,7 +145,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114000012415235836, guid: 552e534783264489cac8698a27248332,
+          type: 2}
         m_MethodName: SwitchScene
         m_Mode: 5
         m_Arguments:
@@ -156,7 +157,8 @@ MonoBehaviour:
           m_StringArgument: Current
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114000010522571906, guid: 552e534783264489cac8698a27248332,
+          type: 2}
         m_MethodName: RestoreTime
         m_Mode: 1
         m_Arguments:

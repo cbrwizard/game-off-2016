@@ -8,6 +8,7 @@ public class ElonCollisionHitHandler : MonoBehaviour {
 
   private GameObject mainController;
   private MainScore mainScore;
+  private DistanceToMars distanceToMars;
   private Animator animator;
 
   void Start()
@@ -15,6 +16,7 @@ public class ElonCollisionHitHandler : MonoBehaviour {
     animator = GetComponent<Animator>();
     mainController = GameObject.FindWithTag("MainController");
     mainScore = mainController.GetComponent<MainScore>();
+    distanceToMars = mainController.GetComponent<DistanceToMars>();
   }
 
   void HandleCollisionHit()
@@ -26,5 +28,6 @@ public class ElonCollisionHitHandler : MonoBehaviour {
   private void DecreaseScore()
   {
     mainScore.score -= decreaseScoreOnHit;
+    distanceToMars.distance -= decreaseScoreOnHit * 100;
   }
 }
