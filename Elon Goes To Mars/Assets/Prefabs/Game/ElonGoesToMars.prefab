@@ -29,6 +29,7 @@ GameObject:
   - 114: {fileID: 114000011493311154}
   - 114: {fileID: 114000011032820868}
   - 114: {fileID: 114000013417379864}
+  - 114: {fileID: 114000012725644726}
   m_Layer: 0
   m_Name: ElonGoesToMars
   m_TagString: MainController
@@ -75,6 +76,17 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114000013417379864}
+        m_MethodName: HandleDistanceChange
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114000012725644726}
         m_MethodName: HandleDistanceChange
         m_Mode: 0
         m_Arguments:
@@ -138,6 +150,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 0}
   mainScoreScript: {fileID: 114000014130974714}
+--- !u!114 &114000012725644726
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e629c90adb04be4be391835d1c59be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: WinEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  winDistance: 0
 --- !u!114 &114000013417379864
 MonoBehaviour:
   m_ObjectHideFlags: 1
