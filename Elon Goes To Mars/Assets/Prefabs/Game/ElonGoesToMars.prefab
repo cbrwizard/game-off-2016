@@ -30,6 +30,7 @@ GameObject:
   - 114: {fileID: 114000011032820868}
   - 114: {fileID: 114000013417379864}
   - 114: {fileID: 114000012725644726}
+  - 114: {fileID: 114000012394576208}
   m_Layer: 0
   m_Name: ElonGoesToMars
   m_TagString: MainController
@@ -126,6 +127,22 @@ MonoBehaviour:
   graphicsParent: {fileID: 0}
   speed: 1.5
   delayTime: 1
+--- !u!114 &114000012394576208
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011388734326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49052947d8a3242f6a2d661a3449f87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marsPrefab: {fileID: 1000011722666844, guid: 72dae1900c18644f687c5c3b6d647eea, type: 2}
+  startingX: 175
+  startingY: 2.5
+  finishX: 65
+  speed: 20
 --- !u!114 &114000012415235836
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -249,7 +266,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: DeathEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  deathScore: 500
+  deathScore: 0
 --- !u!114 &114000013966909098
 MonoBehaviour:
   m_ObjectHideFlags: 1

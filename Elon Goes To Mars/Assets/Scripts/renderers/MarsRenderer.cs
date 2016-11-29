@@ -5,36 +5,46 @@ using UnityEngine;
 **/
 public class MarsRenderer : MonoBehaviour {
   public GameObject marsPrefab;
-  public float firstSpawn = 2.0f;
-  public float spawnFrequency = 1.5f;
   public float startingX;
-  public float startingYFrom;
-  public float startingYTo;
-  public int destroyAfterSeconds;
+  public float startingY;
+  public float finishX;
+  public float speed = 10.0f;
+
+  private bool movingLeft = false;
+  private GameObject mars;
 
   public MarsRenderer(GameObject passedMarsPrefab)
   {
     marsPrefab = passedMarsPrefab;
   }
 
-  void Start()
+  public void HandleWin()
   {
-    InvokeRepeating("render", firstSpawn, spawnFrequency);
+    render();
+    startMovingLeft();
   }
 
-  public void StopSpawning()
+  private void render()
   {
-    CancelInvoke("render");
-  }
-
-  public void render()
-  {
-    GameObject mars = (GameObject)Instantiate(
+    mars = (GameObject)Instantiate(
       marsPrefab,
-      new Vector3(startingX, Random.Range (startingYFrom, startingYTo), 0),
+      new Vector3(startingX, startingY, 0),
       Quaternion.identity
     );
+  }
 
-    mars.SendMessage("HandleDestroyOnDelayStart", destroyAfterSeconds);
+  private void startMovingLeft()
+  {
+    movingLeft = true;
+  }
+
+  void Update() {
+    if (movingLeft)
+    {
+      float step = speed * Time.unscaledDeltaTime;
+      mars.transform.position = Vector3.MoveTowards(
+        mars.transform.position, new Vector3(finishX, startingY, 0), step
+      );
+    }
   }
 }
