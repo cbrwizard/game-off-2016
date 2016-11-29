@@ -15,7 +15,6 @@ public class DeathController: MonoBehaviour {
 
   void Start()
   {
-
     if (deathEvent == null)
     {
       deathEvent = new DeathEvent ();

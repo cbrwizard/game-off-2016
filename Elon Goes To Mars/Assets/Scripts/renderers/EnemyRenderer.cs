@@ -26,6 +26,11 @@ public class EnemyRenderer : MonoBehaviour {
     InvokeRepeating("render", firstSpawn, spawnFrequency);
   }
 
+  public void StopSpawning()
+  {
+    CancelInvoke("render");
+  }
+
   public void render()
   {
     GameObject enemy = (GameObject)Instantiate(
