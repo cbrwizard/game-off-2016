@@ -16,6 +16,15 @@ You can play in in a WebGL enabled browser here https://cbrwizard.github.io/game
 
 Use arrow keys, avoid meteors, have fun!
 
+# What was used?
+
+The game is written in Unity. Photoshop was used to create images. http://www.bfxr.net was used to create sounds. 
+
+# How to develop
+
+Clone it, open the project in Unity, edit.
+
+
 # TODO
 
 * Organize prefabs better.
@@ -24,3 +33,5 @@ Use arrow keys, avoid meteors, have fun!
 * Play audio on enemy hit
 * Make sure that an enemy hit doesn't trigger a Hit twice.
 * Unify cameras
+* Create proper audio options
+* Fix movement speed
