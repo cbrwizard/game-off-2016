@@ -6,6 +6,8 @@ public class ScoreChangeEvent : UnityEvent<int> {}
 
 /**
   Stores the Score value and dispatches an event on it's change.
+  TODO: create an ApplicationModelController which will change the model
+  and somehow delegate it's update to it (maybe by an event).
 **/
 public class MainScore : MonoBehaviour {
   public ScoreChangeEvent scoreChangeEvent;
@@ -23,6 +25,7 @@ public class MainScore : MonoBehaviour {
         _score = value;
       }
 
+      ApplicationModel.survivors = _score;
       scoreChangeEvent.Invoke(_score);
     }
   }
@@ -31,6 +34,7 @@ public class MainScore : MonoBehaviour {
 
   void Start()
   {
+    ApplicationModel.survivors = score;
     if (scoreChangeEvent == null)
     {
       scoreChangeEvent = new ScoreChangeEvent ();
