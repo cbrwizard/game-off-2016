@@ -476,7 +476,73 @@ Prefab:
       propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 1273685349}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: SwitchScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_FloatArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Target
+      value: 
+      objectReference: {fileID: 1273685349}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_MethodName
+      value: SwitchScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[7].m_Arguments.m_StringArgument
+      value: Victory
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012725644726, guid: 552e534783264489cac8698a27248332,
+        type: 2}
+      propertyPath: winEvent.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_StringArgument
+      value: Victory
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 552e534783264489cac8698a27248332, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &228490969 stripped
@@ -842,7 +908,7 @@ Prefab:
     - target: {fileID: 224000011701742910, guid: 9c70ef4b90b4043da9f3843cdc9d335f,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9c70ef4b90b4043da9f3843cdc9d335f, type: 2}
@@ -1553,6 +1619,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 801422550}
   m_RootOrder: 0
+--- !u!114 &1273685349 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012415235836, guid: 552e534783264489cac8698a27248332,
+    type: 2}
+  m_PrefabInternal: {fileID: 226697672}
+  m_Script: {fileID: 11500000, guid: 08ab2f9f804ac4ee396036900c9fe54e, type: 3}
 --- !u!1001 &1357142221
 Prefab:
   m_ObjectHideFlags: 0
@@ -1706,7 +1778,7 @@ Prefab:
     - target: {fileID: 224000013936651662, guid: 1392d02af2a354906a14abe3b8ec3e53,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 27
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1392d02af2a354906a14abe3b8ec3e53, type: 2}
