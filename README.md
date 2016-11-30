@@ -23,3 +23,4 @@ Use arrow keys, avoid meteors, have fun!
 * Get rid of SendMessage
 * Play audio on enemy hit
 * Make sure that an enemy hit doesn't trigger a Hit twice.
+* Unify cameras
