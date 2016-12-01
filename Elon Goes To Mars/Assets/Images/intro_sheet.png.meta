@@ -1,0 +1,817 @@
+fileFormatVersion: 2
+guid: 0b8ed9700645048a8838ceeb98d481bc
+timeCreated: 1480551744
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: intro_sheet_0
+    21300002: intro_sheet_1
+    21300004: intro_sheet_2
+    21300006: intro_sheet_3
+    21300008: intro_sheet_4
+    21300010: intro_sheet_5
+    21300012: intro_sheet_6
+    21300014: intro_sheet_7
+    21300016: intro_sheet_8
+    21300018: intro_sheet_9
+    21300020: intro_sheet_10
+    21300022: intro_sheet_11
+    21300024: intro_sheet_12
+    21300026: intro_sheet_13
+    21300028: intro_sheet_14
+    21300030: intro_sheet_15
+    21300032: intro_sheet_16
+    21300034: intro_sheet_17
+    21300036: intro_sheet_18
+    21300038: intro_sheet_19
+    21300040: intro_sheet_20
+    21300042: intro_sheet_21
+    21300044: intro_sheet_22
+    21300046: intro_sheet_23
+    21300048: intro_sheet_24
+    21300050: intro_sheet_25
+    21300052: intro_sheet_26
+    21300054: intro_sheet_27
+    21300056: intro_sheet_28
+    21300058: intro_sheet_29
+    21300060: intro_sheet_30
+    21300062: intro_sheet_31
+    21300064: intro_sheet_32
+    21300066: intro_sheet_33
+    21300068: intro_sheet_34
+    21300070: intro_sheet_35
+    21300072: intro_sheet_36
+    21300074: intro_sheet_37
+    21300076: intro_sheet_38
+    21300078: intro_sheet_39
+    21300080: intro_sheet_40
+    21300082: intro_sheet_41
+    21300084: intro_sheet_42
+    21300086: intro_sheet_43
+    21300088: intro_sheet_44
+    21300090: intro_sheet_45
+    21300092: intro_sheet_46
+    21300094: intro_sheet_47
+    21300096: intro_sheet_48
+    21300098: intro_sheet_49
+    21300100: intro_sheet_50
+    21300102: intro_sheet_51
+    21300104: intro_sheet_52
+    21300106: intro_sheet_53
+    21300108: intro_sheet_54
+    21300110: intro_sheet_55
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: intro_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 3600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 3000
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 2400
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 1800
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 1200
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 600
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 2880
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: intro_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 960
+        height: 600
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
